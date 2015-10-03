@@ -1,11 +1,17 @@
 source 'https://rubygems.org'
 
+# Fix the Ruby version in order to deploy on Heroku
+ruby '2.0.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
 
 # Use postgresql as the database for Active Record
 gem 'pg'
+
+# Include 'rails_12factor' gem in order to deploy on Heroku
+gem 'rails_12factor'
+
 
 # Use ThoughtBot's High Voltage gem
 gem 'high_voltage'
